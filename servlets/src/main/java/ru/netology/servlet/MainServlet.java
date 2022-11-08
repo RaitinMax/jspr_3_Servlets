@@ -11,21 +11,13 @@ import javax.servlet.http.HttpServletResponse;
 
 public class MainServlet extends HttpServlet {
 
- /* protected void service(HttpServletRequest req,HttpServletResponse resp){
-    try {
-      resp.setStatus(HttpServletResponse.SC_NOT_IMPLEMENTED);
-      resp.getWriter().print("Hello1 World");
-    } catch (IOException e) {
-      throw new RuntimeException(e);
-    }
-  }*/
   private PostController controller;
 
-  @Override
-  public void init() {
-    var context = new AnnotationConfigApplicationContext("ru.netology");
-    controller = context.getBean(PostController.class);
-  }
+    @Override
+    public void init() {
+        var context = new AnnotationConfigApplicationContext("ru.netology");
+        controller = context.getBean(PostController.class);
+    }
 
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp) {

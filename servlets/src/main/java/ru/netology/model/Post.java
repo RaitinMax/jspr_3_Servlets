@@ -1,12 +1,12 @@
 package ru.netology.model;
 
 public class Post {
+    @Expose
     private long id;
+    @Expose
     private String content;
     private boolean removed = false;
 
-/*    public Post() {
-    }*/
 
     public Post(long id, String content) {
         this.id = id;

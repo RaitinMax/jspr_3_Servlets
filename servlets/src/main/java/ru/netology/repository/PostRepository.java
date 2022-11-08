@@ -11,7 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
-// Stub
+@Repository
 public class PostRepository {
     private final Map<Long, Post> posts = new ConcurrentHashMap<>();
     private final AtomicInteger size = new AtomicInteger(0);
