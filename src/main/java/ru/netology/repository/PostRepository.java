@@ -11,7 +11,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 import javax.servlet.http.HttpServletResponse;
 
-@Repository
 public class PostRepository {
     private ConcurrentHashMap<Long, Post> posts = new ConcurrentHashMap<>();
 
